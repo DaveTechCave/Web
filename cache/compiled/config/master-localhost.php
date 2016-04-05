@@ -1,13 +1,17 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledConfig',
-    'timestamp' => 1459869709,
-    'checksum' => '3a06a9941faf40f91d3ebd8ba97d1cd8',
+    'timestamp' => 1459877053,
+    'checksum' => '5dcb1c424d5f2c11eea209eeb32befa6',
     'files' => [
         'user/config' => [
             'media' => [
                 'file' => 'user/config/media.yaml',
                 'modified' => 1459825553
+            ],
+            'plugins/taxonomylist' => [
+                'file' => 'user/config/plugins/taxonomylist.yaml',
+                'modified' => 1459877054
             ],
             'security' => [
                 'file' => 'user/config/security.yaml',
@@ -15,7 +19,7 @@ return [
             ],
             'site' => [
                 'file' => 'user/config/site.yaml',
-                'modified' => 1459869435
+                'modified' => 1459876227
             ],
             'streams' => [
                 'file' => 'user/config/streams.yaml',
@@ -626,9 +630,9 @@ return [
             ]
         ],
         'site' => [
-            'title' => 'Grav',
+            'title' => 'The Tech Cave',
             'author' => [
-                'name' => 'John Appleseed',
+                'name' => 'Tech Cave Team',
                 'email' => 'john@email.com',
                 'devon' => [
                     'name' => 'Devon Smith',
@@ -643,7 +647,7 @@ return [
                 3 => 'author'
             ],
             'metadata' => [
-                'description' => 'Grav is an easy to use, yet powerful, open source flat-file CMS'
+                'description' => 'A Blog sit for the nerd enthusiest'
             ],
             'summary' => [
                 'enabled' => true,

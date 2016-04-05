@@ -1,17 +1,27 @@
-title: Grav
+title: 'The Tech Cave'
 author:
+  name: 'Tech Cave Team'
+  email: john@email.com
   devon:
-    name: Devon Smith
+    name: 'Devon Smith'
     email: devo8604@gmail.com
-    bio: I am a professional Linux System Administrator and a web development hobbyist	
+    bio: 'I am a professional Linux System Administrator and a web development hobbyist'
+taxonomies:
+  - category
+  - tag
+  - month
+  - author
+metadata:
+  description: 'A Blog sit for the nerd enthusiest'
+summary:
+  enabled: true
+  format: short
+  size: 300
+  delimiter: '==='
+redirects:
+  /changelog: /blog/the-urban-jungle
+routes:
+  /something/else: /blog/focus-and-blur
+  '/another/one/(.*)': /blog/$1
 blog:
   route: ''
-metadata:
-    description: 'Grav is an easy to use, yet powerful, open source flat-file CMS'
-taxonomies: [category,tag,month,author]
-redirects:
-    /changelog: /blog/the-urban-jungle
-routes:
-    /something/else: /blog/focus-and-blur
-    /another/one/(.*): /blog/$1
-

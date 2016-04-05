@@ -1,12 +1,18 @@
 ---
 title: Welcome!
 published: true
+taxonomy:
+    tag:
+        - Welcome
+        - Introduction
+    author:
+        - 'Devon Smith'
 process:
     markdown: true
 child_type: default
 routable: true
 cache_enable: true
-visible: true
+visible: false
 header_image: '1'
 summary:
     enabled: '1'
@@ -44,9 +50,11 @@ foundation_util_touch_js: use_global
 foundation_util_triggers_js: use_global
 ---
 
+***
+
 ## Welcome to the Newest Blog for Tech Enthusiests and Professionals!
 
-***
+<p/>
 
 ### Introduction
 
@@ -71,4 +79,4 @@ In the long term, we would like to incorporate a feature that would allow for us
 ###### Thanks for reading and stay tuned for more posts!
 
 <p/>
-<p style="text-align:right"><em>The Tech Cave Team</em></p>
+<p style="text-align:right"><em>~ The Tech Cave Team</em></p>T
