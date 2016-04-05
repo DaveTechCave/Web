@@ -5,8 +5,6 @@ taxonomy:
     tag:
         - Welcome
         - Introduction
-        - Welcome
-        - Introduction
     author:
         - 'Devon Smith'
 process:

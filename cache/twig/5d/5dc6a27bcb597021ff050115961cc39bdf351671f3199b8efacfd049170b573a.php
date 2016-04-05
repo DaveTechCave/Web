@@ -236,13 +236,16 @@ class __TwigTemplate_8a4cd0e718f3ea0ec9ba661ba16342e5e6dcd83da26fa35f57b6fdf4639
                 ";
             }
             // line 84
+            echo "
+                ";
+            // line 86
             echo "                ";
-            $this->loadTemplate("partials/comments.html.twig", "partials/blog_item.html.twig", 84)->display(array_merge($context, array("page" => (isset($context["page"]) ? $context["page"] : null))));
-            // line 85
+            $this->loadTemplate("partials/comments.html.twig", "partials/blog_item.html.twig", 86)->display(array_merge($context, array("page" => (isset($context["page"]) ? $context["page"] : null))));
+            // line 87
             echo "            </p>
         ";
         }
-        // line 87
+        // line 89
         echo "
     </div>
 </div>
@@ -261,7 +264,7 @@ class __TwigTemplate_8a4cd0e718f3ea0ec9ba661ba16342e5e6dcd83da26fa35f57b6fdf4639
 
     public function getDebugInfo()
     {
-        return array (  246 => 87,  242 => 85,  239 => 84,  231 => 80,  229 => 79,  226 => 78,  218 => 74,  216 => 73,  213 => 72,  211 => 71,  208 => 70,  205 => 69,  203 => 68,  198 => 67,  192 => 64,  189 => 63,  183 => 61,  177 => 59,  174 => 58,  172 => 57,  167 => 55,  161 => 53,  158 => 52,  155 => 51,  152 => 50,  150 => 49,  145 => 48,  143 => 47,  136 => 42,  130 => 40,  127 => 39,  124 => 38,  121 => 37,  118 => 36,  115 => 35,  112 => 34,  108 => 32,  94 => 30,  90 => 29,  87 => 28,  85 => 27,  80 => 25,  76 => 24,  73 => 23,  65 => 20,  62 => 19,  53 => 16,  45 => 12,  43 => 11,  40 => 10,  38 => 9,  34 => 7,  31 => 6,  28 => 5,  25 => 4,  23 => 3,  19 => 1,);
+        return array (  249 => 89,  245 => 87,  242 => 86,  239 => 84,  231 => 80,  229 => 79,  226 => 78,  218 => 74,  216 => 73,  213 => 72,  211 => 71,  208 => 70,  205 => 69,  203 => 68,  198 => 67,  192 => 64,  189 => 63,  183 => 61,  177 => 59,  174 => 58,  172 => 57,  167 => 55,  161 => 53,  158 => 52,  155 => 51,  152 => 50,  150 => 49,  145 => 48,  143 => 47,  136 => 42,  130 => 40,  127 => 39,  124 => 38,  121 => 37,  118 => 36,  115 => 35,  112 => 34,  108 => 32,  94 => 30,  90 => 29,  87 => 28,  85 => 27,  80 => 25,  76 => 24,  73 => 23,  65 => 20,  62 => 19,  53 => 16,  45 => 12,  43 => 11,  40 => 10,  38 => 9,  34 => 7,  31 => 6,  28 => 5,  25 => 4,  23 => 3,  19 => 1,);
     }
 }
 /* <div class="list-item">*/
@@ -347,6 +350,8 @@ class __TwigTemplate_8a4cd0e718f3ea0ec9ba661ba16342e5e6dcd83da26fa35f57b6fdf4639
 /*                         <i class="fa fa-chevron-right"></i>*/
 /*                     </a>*/
 /*                 {% endif %}*/
+/* */
+/*                 {# Devon Smith: Added comment twig line #}*/
 /*                 {% include 'partials/comments.html.twig' with {'page': page} %}*/
 /*             </p>*/
 /*         {% endif %}*/
