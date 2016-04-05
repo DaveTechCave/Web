@@ -195,7 +195,7 @@ class __TwigTemplate_8a4cd0e718f3ea0ec9ba661ba16342e5e6dcd83da26fa35f57b6fdf4639
             echo "    ";
         }
         // line 62
-        echo "
+        echo "    
     ";
         // line 63
         if ((isset($context["show_prev_next"]) ? $context["show_prev_next"] : null)) {
@@ -306,7 +306,7 @@ class __TwigTemplate_8a4cd0e718f3ea0ec9ba661ba16342e5e6dcd83da26fa35f57b6fdf4639
 /*         {{ page.content }}*/
 /*         {% set show_prev_next = true %}*/
 /*     {% endif %}*/
-/* */
+/*     */
 /*     {% if show_prev_next %}*/
 /*         <p class="prev-next sg-center">*/
 /*             {% if not page.isLast %}*/

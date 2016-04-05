@@ -2,12 +2,15 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/var/www/html/user/config/site.yaml',
-    'modified' => 1456438750,
+    'modified' => 1459869435,
     'data' => [
         'title' => 'Grav',
         'author' => [
-            'name' => 'Joe Bloggs',
-            'email' => 'joe@test.com'
+            'devon' => [
+                'name' => 'Devon Smith',
+                'email' => 'devo8604@gmail.com',
+                'bio' => 'I am a professional Linux System Administrator and a web development hobbyist'
+            ]
         ],
         'blog' => [
             'route' => ''
@@ -18,7 +21,8 @@ return [
         'taxonomies' => [
             0 => 'category',
             1 => 'tag',
-            2 => 'month'
+            2 => 'month',
+            3 => 'author'
         ],
         'redirects' => [
             '/changelog' => '/blog/the-urban-jungle'

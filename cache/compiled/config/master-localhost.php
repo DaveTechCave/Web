@@ -1,8 +1,8 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledConfig',
-    'timestamp' => 1459826224,
-    'checksum' => '56041a2a6a07394f88e55498bf0f1a2d',
+    'timestamp' => 1459869709,
+    'checksum' => '3a06a9941faf40f91d3ebd8ba97d1cd8',
     'files' => [
         'user/config' => [
             'media' => [
@@ -15,7 +15,7 @@ return [
             ],
             'site' => [
                 'file' => 'user/config/site.yaml',
-                'modified' => 1456438750
+                'modified' => 1459869435
             ],
             'streams' => [
                 'file' => 'user/config/streams.yaml',
@@ -24,6 +24,10 @@ return [
             'system' => [
                 'file' => 'user/config/system.yaml',
                 'modified' => 1459826224
+            ],
+            'themes/bones' => [
+                'file' => 'user/config/themes/bones.yaml',
+                'modified' => 1459865518
             ]
         ],
         'system/config' => [
@@ -624,13 +628,19 @@ return [
         'site' => [
             'title' => 'Grav',
             'author' => [
-                'name' => 'Joe Bloggs',
-                'email' => 'joe@test.com'
+                'name' => 'John Appleseed',
+                'email' => 'john@email.com',
+                'devon' => [
+                    'name' => 'Devon Smith',
+                    'email' => 'devo8604@gmail.com',
+                    'bio' => 'I am a professional Linux System Administrator and a web development hobbyist'
+                ]
             ],
             'taxonomies' => [
                 0 => 'category',
                 1 => 'tag',
-                2 => 'month'
+                2 => 'month',
+                3 => 'author'
             ],
             'metadata' => [
                 'description' => 'Grav is an easy to use, yet powerful, open source flat-file CMS'
@@ -827,6 +837,236 @@ return [
         ],
         'security' => [
             'salt' => 'U5WMjJBswd4S1y'
+        ],
+        'themes' => [
+            'bones' => [
+                'enabled' => true,
+                'site_title' => [
+                    'enabled' => true
+                ],
+                'google_fonts_logo' => [
+                    'enabled' => true
+                ],
+                'fontawesome' => [
+                    'enabled' => true
+                ],
+                'google_prettify' => [
+                    'enabled' => true
+                ],
+                'dropdown' => [
+                    'enabled' => false
+                ],
+                'mobilemenu_breakpoint' => 'large',
+                'mobilemenu_position' => 'left',
+                'foundation_offcanvas_js' => [
+                    'enabled' => true
+                ],
+                'foundation_util_mediaQuery_js' => [
+                    'enabled' => true
+                ],
+                'foundation_util_motion_js' => [
+                    'enabled' => true
+                ],
+                'foundation_util_touch_js' => [
+                    'enabled' => true
+                ],
+                'foundation_util_triggers_js' => [
+                    'enabled' => true
+                ],
+                'css_bones' => [
+                    'enabled' => true
+                ],
+                'css_global_styles' => [
+                    'enabled' => true
+                ],
+                'css_grid' => [
+                    'enabled' => true
+                ],
+                'css_flex_grid' => [
+                    'enabled' => false
+                ],
+                'css_typography' => [
+                    'enabled' => true
+                ],
+                'css_button' => [
+                    'enabled' => true
+                ],
+                'css_forms' => [
+                    'enabled' => true
+                ],
+                'css_visibility_classes' => [
+                    'enabled' => true
+                ],
+                'css_float_classes' => [
+                    'enabled' => true
+                ],
+                'css_menu' => [
+                    'enabled' => true
+                ],
+                'css_off_canvas' => [
+                    'enabled' => true
+                ],
+                'css_pagination' => [
+                    'enabled' => true
+                ],
+                'css_sticky' => [
+                    'enabled' => true
+                ],
+                'css_table' => [
+                    'enabled' => true
+                ],
+                'tab' => 'on',
+                'animate_css' => [
+                    'enabled' => true
+                ],
+                'wow_js' => [
+                    'enabled' => true
+                ],
+                'foundation_abide_js' => [
+                    'enabled' => false
+                ],
+                'foundation_accordion_js' => [
+                    'enabled' => false
+                ],
+                'foundation_accordionMenu_js' => [
+                    'enabled' => false
+                ],
+                'foundation_drilldown_js' => [
+                    'enabled' => false
+                ],
+                'foundation_dropdown_js' => [
+                    'enabled' => false
+                ],
+                'foundation_dropdownMenu_js' => [
+                    'enabled' => false
+                ],
+                'foundation_equalizer_js' => [
+                    'enabled' => true
+                ],
+                'foundation_interchange_js' => [
+                    'enabled' => false
+                ],
+                'foundation_magellan_js' => [
+                    'enabled' => false
+                ],
+                'foundation_orbit_js' => [
+                    'enabled' => false
+                ],
+                'foundation_responsiveMenu_js' => [
+                    'enabled' => false
+                ],
+                'foundation_responsiveToggle_js' => [
+                    'enabled' => false
+                ],
+                'foundation_reveal_js' => [
+                    'enabled' => false
+                ],
+                'foundation_slider_js' => [
+                    'enabled' => false
+                ],
+                'foundation_sticky_js' => [
+                    'enabled' => false
+                ],
+                'foundation_tabs_js' => [
+                    'enabled' => false
+                ],
+                'foundation_toggler_js' => [
+                    'enabled' => false
+                ],
+                'foundation_tooltip_js' => [
+                    'enabled' => false
+                ],
+                'foundation_util_box_js' => [
+                    'enabled' => false
+                ],
+                'foundation_util_keyboard_js' => [
+                    'enabled' => false
+                ],
+                'foundation_util_nest_js' => [
+                    'enabled' => false
+                ],
+                'foundation_util_timerAndImageLoader_js' => [
+                    'enabled' => false
+                ],
+                'css_custom' => [
+                    'enabled' => false
+                ],
+                'css_accordion' => [
+                    'enabled' => false
+                ],
+                'css_accordion_menu' => [
+                    'enabled' => false
+                ],
+                'css_badge' => [
+                    'enabled' => false
+                ],
+                'css_breadcrumbs' => [
+                    'enabled' => false
+                ],
+                'css_button_group' => [
+                    'enabled' => false
+                ],
+                'css_callout' => [
+                    'enabled' => true
+                ],
+                'css_close_button' => [
+                    'enabled' => false
+                ],
+                'css_drilldown_menu' => [
+                    'enabled' => false
+                ],
+                'css_dropdown' => [
+                    'enabled' => false
+                ],
+                'css_dropdown_menu' => [
+                    'enabled' => false
+                ],
+                'css_flex_video' => [
+                    'enabled' => false
+                ],
+                'css_label' => [
+                    'enabled' => false
+                ],
+                'css_media_object' => [
+                    'enabled' => false
+                ],
+                'css_orbit' => [
+                    'enabled' => false
+                ],
+                'css_progress_bar' => [
+                    'enabled' => false
+                ],
+                'css_slider' => [
+                    'enabled' => false
+                ],
+                'css_reveal' => [
+                    'enabled' => false
+                ],
+                'css_switch' => [
+                    'enabled' => false
+                ],
+                'css_tabs' => [
+                    'enabled' => false
+                ],
+                'css_thumbnail' => [
+                    'enabled' => false
+                ],
+                'css_title_bar' => [
+                    'enabled' => false
+                ],
+                'css_tooltip' => [
+                    'enabled' => false
+                ],
+                'css_top_bar' => [
+                    'enabled' => false
+                ],
+                'css_ui_transitions' => [
+                    'enabled' => false
+                ],
+                'css_ui_animations' => [
+                    'enabled' => false
+                ]
+            ]
         ]
     ]
 ];

@@ -1,12 +1,14 @@
 title: Grav
 author:
-  name: Joe Bloggs
-  email: 'joe@test.com'
+  devon:
+    name: Devon Smith
+    email: devo8604@gmail.com
+    bio: I am a professional Linux System Administrator and a web development hobbyist	
 blog:
   route: ''
 metadata:
     description: 'Grav is an easy to use, yet powerful, open source flat-file CMS'
-taxonomies: [category,tag,month]
+taxonomies: [category,tag,month,author]
 redirects:
     /changelog: /blog/the-urban-jungle
 routes:
