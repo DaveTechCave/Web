@@ -1,8 +1,8 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledConfig',
-    'timestamp' => 1459877053,
-    'checksum' => '5dcb1c424d5f2c11eea209eeb32befa6',
+    'timestamp' => 1459891575,
+    'checksum' => '59d875874ad4d031b5c16ce7a2cb273a',
     'files' => [
         'user/config' => [
             'media' => [
@@ -27,7 +27,7 @@ return [
             ],
             'system' => [
                 'file' => 'user/config/system.yaml',
-                'modified' => 1459826224
+                'modified' => 1459891543
             ],
             'themes/bones' => [
                 'file' => 'user/config/themes/bones.yaml',
@@ -99,11 +99,15 @@ return [
             ],
             'plugins/form' => [
                 'file' => 'user/plugins/form/form.yaml',
-                'modified' => 1459825536
+                'modified' => 1459891565
             ],
             'plugins/breadcrumbs' => [
                 'file' => 'user/plugins/breadcrumbs/breadcrumbs.yaml',
                 'modified' => 1456438752
+            ],
+            'plugins/comments' => [
+                'file' => 'user/plugins/comments/comments.yaml',
+                'modified' => 1459891568
             ],
             'plugins/error' => [
                 'file' => 'user/plugins/error/error.yaml',
@@ -111,7 +115,7 @@ return [
             ],
             'plugins/email' => [
                 'file' => 'user/plugins/email/email.yaml',
-                'modified' => 1459825537
+                'modified' => 1459891566
             ]
         ]
     ],
@@ -358,6 +362,91 @@ return [
                 'icon_home' => '',
                 'icon_divider_classes' => 'fa fa-angle-right',
                 'link_trailing' => false
+            ],
+            'comments' => [
+                'enabled' => true,
+                'enable_on_routes' => [
+                    0 => '/blog'
+                ],
+                'disable_on_routes' => [
+                    0 => '/blog/blog-post-to-ignore',
+                    1 => '/ignore-this-route'
+                ],
+                'form' => [
+                    'name' => 'comments',
+                    'fields' => [
+                        0 => [
+                            'name' => 'name',
+                            'label' => 'Name',
+                            'placeholder' => 'Enter your name',
+                            'autocomplete' => 'on',
+                            'type' => 'text',
+                            'validate' => [
+                                'required' => true
+                            ]
+                        ],
+                        1 => [
+                            'name' => 'email',
+                            'label' => 'Email',
+                            'placeholder' => 'Enter your email address',
+                            'type' => 'email',
+                            'validate' => [
+                                'required' => true
+                            ]
+                        ],
+                        2 => [
+                            'name' => 'text',
+                            'label' => 'Message',
+                            'placeholder' => 'Enter your message',
+                            'type' => 'textarea',
+                            'validate' => [
+                                'required' => true
+                            ]
+                        ],
+                        3 => [
+                            'name' => 'date',
+                            'type' => 'hidden',
+                            'process' => [
+                                'fillWithCurrentDateTime' => true
+                            ]
+                        ],
+                        4 => [
+                            'name' => 'title',
+                            'type' => 'hidden',
+                            'evaluateDefault' => 'grav.page.header.title'
+                        ],
+                        5 => [
+                            'name' => 'lang',
+                            'type' => 'hidden',
+                            'evaluateDefault' => 'grav.language.getLanguage'
+                        ],
+                        6 => [
+                            'name' => 'path',
+                            'type' => 'hidden',
+                            'evaluateDefault' => 'grav.uri.path'
+                        ]
+                    ],
+                    'buttons' => [
+                        0 => [
+                            'type' => 'submit',
+                            'value' => 'Submit'
+                        ]
+                    ],
+                    'process' => [
+                        0 => [
+                            'email' => [
+                                'subject' => '[New Comment] from {{ form.value.name|e }}',
+                                'body' => '{% include \'forms/data.html.twig\' %}'
+                            ]
+                        ],
+                        1 => [
+                            'addComment' => NULL
+                        ],
+                        2 => [
+                            'message' => 'Thank you for writing your comment!'
+                        ]
+                    ]
+                ]
             ],
             'error' => [
                 'enabled' => true,

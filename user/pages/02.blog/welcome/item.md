@@ -5,6 +5,8 @@ taxonomy:
     tag:
         - Welcome
         - Introduction
+        - Welcome
+        - Introduction
     author:
         - 'Devon Smith'
 process:
@@ -79,4 +81,4 @@ In the long term, we would like to incorporate a feature that would allow for us
 ###### Thanks for reading and stay tuned for more posts!
 
 <p/>
-<p style="text-align:right"><em>~ The Tech Cave Team</em></p>T
+<p style="text-align:right"><em>~ The Tech Cave Team</em></p>

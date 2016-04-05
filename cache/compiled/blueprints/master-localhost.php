@@ -1,8 +1,8 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledBlueprints',
-    'timestamp' => 1459826224,
-    'checksum' => 'a5da8a136b3ca2a660d387b43f0dd0f4',
+    'timestamp' => 1459891575,
+    'checksum' => '06aed0064d3abca349aa8a25dded1e96',
     'files' => [
         'system/blueprints/config' => [
             'media' => [
@@ -69,11 +69,15 @@ return [
             ],
             'plugins/form' => [
                 'file' => 'user/plugins/form/blueprints.yaml',
-                'modified' => 1459825536
+                'modified' => 1459891565
             ],
             'plugins/breadcrumbs' => [
                 'file' => 'user/plugins/breadcrumbs/blueprints.yaml',
                 'modified' => 1456438752
+            ],
+            'plugins/comments' => [
+                'file' => 'user/plugins/comments/blueprints.yaml',
+                'modified' => 1459891568
             ],
             'plugins/error' => [
                 'file' => 'user/plugins/error/blueprints.yaml',
@@ -81,7 +85,7 @@ return [
             ],
             'plugins/email' => [
                 'file' => 'user/plugins/email/blueprints.yaml',
-                'modified' => 1459825537
+                'modified' => 1459891566
             ]
         ]
     ],
@@ -1613,6 +1617,24 @@ return [
                     'type' => 'bool'
                 ],
                 'name' => 'plugins.breadcrumbs.link_trailing'
+            ],
+            'plugins.comments' => [
+                'type' => '_parent',
+                'name' => 'plugins.comments'
+            ],
+            'plugins.comments.enabled' => [
+                'type' => 'toggle',
+                'label' => 'PLUGIN_ADMIN.PLUGIN_STATUS',
+                'highlight' => 1,
+                'default' => 0,
+                'options' => [
+                    1 => 'PLUGIN_ADMIN.ENABLED',
+                    0 => 'PLUGIN_ADMIN.DISABLED'
+                ],
+                'validate' => [
+                    'type' => 'bool'
+                ],
+                'name' => 'plugins.comments.enabled'
             ],
             'plugins.error' => [
                 'type' => '_parent',
@@ -3229,6 +3251,9 @@ return [
                     'icon_home' => 'plugins.breadcrumbs.icon_home',
                     'icon_divider_classes' => 'plugins.breadcrumbs.icon_divider_classes',
                     'link_trailing' => 'plugins.breadcrumbs.link_trailing'
+                ],
+                'comments' => [
+                    'enabled' => 'plugins.comments.enabled'
                 ],
                 'error' => [
                     'enabled' => 'plugins.error.enabled',

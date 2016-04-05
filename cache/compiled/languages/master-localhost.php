@@ -1,8 +1,8 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledLanguages',
-    'timestamp' => 1459826225,
-    'checksum' => '274a15e42ed720834c0c38a7eb010982',
+    'timestamp' => 1459891575,
+    'checksum' => 'cb2d8ca9f9f6fa98bdc8f67cb9d3d777',
     'files' => [
         'system/languages' => [
             'cs' => [
@@ -97,11 +97,15 @@ return [
             ],
             'plugins/form' => [
                 'file' => 'user/plugins/form/languages.yaml',
-                'modified' => 1459825536
+                'modified' => 1459891565
+            ],
+            'plugins/comments' => [
+                'file' => 'user/plugins/comments/languages.yaml',
+                'modified' => 1459891568
             ],
             'plugins/email' => [
                 'file' => 'user/plugins/email/languages.yaml',
-                'modified' => 1459825537
+                'modified' => 1459891566
             ]
         ],
         'user/plugins/admin/languages' => [
@@ -1333,6 +1337,18 @@ return [
                 'REVERSE_PROXY_HELP' => 'Aktivieren Sie dies, wenn sie sich hinter einem Reverse Proxy befinden und Probleme mit URLs und inkorrekten Ports haben',
                 'INVALID_FRONTMATTER_COULD_NOT_SAVE' => 'Ungültiger Frontmatter, speichern nicht möglich'
             ],
+            'PLUGIN_COMMENTS' => [
+                'ADD_COMMENT' => 'Kommentar hinzufügen',
+                'COMMENTS' => 'Kommentare',
+                'EMAIL_NOT_CONFIGURED' => 'Email nicht konfiguriert',
+                'NEW_COMMENT_EMAIL_SUBJECT' => 'Neuer Kommentar für %1$s',
+                'NEW_COMMENT_EMAIL_BODY' => '<p>Ein neuer Kommentar am %1$s von %3$s (%4$s).</p><p>Seite: %2$s</p><p>Text: %5$s</p>',
+                'EMAIL_FOOTER' => '',
+                'NAME' => 'Name:',
+                'EMAIL' => 'Email:',
+                'WRITTEN_ON' => 'geschrieben am',
+                'BY' => 'von'
+            ],
             'FRONTMATTER_ERROR_PAGE' => '---
 title: %1$s
 ---
@@ -2033,6 +2049,18 @@ Pfad: `%2$s`
                 'ACCEPT' => 'Allowed MIME Types',
                 'ACCEPT_HELP' => 'A list of MIME Types that are allowed for upload',
                 'ERROR_VALIDATING_CAPTCHA' => 'Error validating the Captcha'
+            ],
+            'PLUGIN_COMMENTS' => [
+                'ADD_COMMENT' => 'Add a comment',
+                'COMMENTS' => 'Comments',
+                'EMAIL_NOT_CONFIGURED' => 'Email not configured',
+                'NEW_COMMENT_EMAIL_SUBJECT' => 'New comment on %1$s',
+                'NEW_COMMENT_EMAIL_BODY' => '<p>A new comment was made on %1$s by %3$s (%4$s).</p><p>Page: %2$s</p><p>Text: %5$s</p>',
+                'EMAIL_FOOTER' => '',
+                'NAME' => 'Name:',
+                'EMAIL' => 'Email:',
+                'WRITTEN_ON' => 'Written on',
+                'BY' => 'by'
             ],
             'PLUGIN_EMAIL' => [
                 'PLEASE_CONFIGURE_A_TO_ADDRESS' => 'Please configure a \'to\' address in the Email Plugin settings, or in the form',
@@ -3470,6 +3498,18 @@ Path: `%2$s`
                 'ACCEPT' => 'Autoriser les Types MIME',
                 'ACCEPT_HELP' => 'Liste des Types MIME autorisés au chargement',
                 'ERROR_VALIDATING_CAPTCHA' => 'Erreur lors de la validation du Captcha'
+            ],
+            'PLUGIN_COMMENTS' => [
+                'ADD_COMMENT' => 'Ajouter un commentaire',
+                'COMMENTS' => 'Commentaires',
+                'EMAIL_NOT_CONFIGURED' => 'Email non configurée',
+                'NEW_COMMENT_EMAIL_SUBJECT' => 'Nouveau commentaire sur %1$s',
+                'NEW_COMMENT_EMAIL_BODY' => '<p>Un nouveau commentaire a été posté sur %1$s par %3$s (%4$s).</p><p>Page: %2$s</p><p>Texte: %5$s</p>',
+                'EMAIL_FOOTER' => '',
+                'NAME' => 'Nom:',
+                'EMAIL' => 'Email:',
+                'WRITTEN_ON' => 'Ecrit le',
+                'BY' => 'par'
             ],
             'PLUGIN_EMAIL' => [
                 'PLEASE_CONFIGURE_A_TO_ADDRESS' => 'Veuillez configurer une adresse de \'destinataire\' dans les paramètres du Plugin ou dans le formulaire.',
@@ -5332,6 +5372,18 @@ Elérési út: `%2$s`
                 'ACCEPT_HELP' => 'Una lista di tipi di MIME che sono permessi per l\'upload',
                 'ERROR_VALIDATING_CAPTCHA' => 'Errore durante la validazione del Captcha'
             ],
+            'PLUGIN_COMMENTS' => [
+                'ADD_COMMENT' => 'Aggiungi un commento',
+                'COMMENTS' => 'Commenti',
+                'EMAIL_NOT_CONFIGURED' => 'Email non configurata',
+                'NEW_COMMENT_EMAIL_SUBJECT' => 'Nuovo commento su %1$s',
+                'NEW_COMMENT_EMAIL_BODY' => '<p>Un nuovo commento è stato postato su %1$s da %3$s (%4$s).</p><p>Pagina: %2$s</p><p>Testo: %5$s</p>',
+                'EMAIL_FOOTER' => '',
+                'NAME' => 'Nome:',
+                'EMAIL' => 'Email:',
+                'WRITTEN_ON' => 'Scritto il',
+                'BY' => 'da'
+            ],
             'NICETIME' => [
                 'NO_DATE_PROVIDED' => 'Nessuna data fornita',
                 'BAD_DATE' => 'Data errata',
@@ -6800,6 +6852,18 @@ Pane: \'%2$s\'
                 'REVERSE_PROXY_HELP' => 'Włącz tą opcję jeśli masz odwrotne proxy i masz problemy z adresami URL które zawierają niepoprawne porty',
                 'INVALID_FRONTMATTER_COULD_NOT_SAVE' => 'Nieprawidłowy frontmatter, nie można zapisać'
             ],
+            'PLUGIN_COMMENTS' => [
+                'ADD_COMMENT' => 'Dodaj komentarz',
+                'COMMENTS' => 'Komentarzy',
+                'EMAIL_NOT_CONFIGURED' => 'Email jest nie skofigurowany',
+                'NEW_COMMENT_EMAIL_SUBJECT' => 'Nowy komentarz %1$s',
+                'NEW_COMMENT_EMAIL_BODY' => '<p>Pojawił się nowy komentarz, napisany %1$s przez %3$s (%4$s).</p><p>Strona: %2$s</p><p>Treść: %5$s</p>',
+                'EMAIL_FOOTER' => '',
+                'NAME' => 'Imię:',
+                'EMAIL' => 'Email:',
+                'WRITTEN_ON' => 'Napisany przez',
+                'BY' => 'przez'
+            ],
             'FRONTMATTER_ERROR_PAGE' => '---
 title: %1$s
 ---
@@ -7830,6 +7894,18 @@ Path: `%2$s`
                 'REVERSE_PROXY_HELP' => 'Включить, если вы находитесь за обратным прокси, и вы испытываете проблемы с URL-адресов, содержащих некорректные порты',
                 'INVALID_FRONTMATTER_COULD_NOT_SAVE' => 'Неверный вводная, не может быть сохранено'
             ],
+            'PLUGIN_COMMENTS' => [
+                'ADD_COMMENT' => 'Добавить комментарий',
+                'COMMENTS' => 'Комментарии',
+                'EMAIL_NOT_CONFIGURED' => 'Email не настроен',
+                'NEW_COMMENT_EMAIL_SUBJECT' => 'Новый комментарий к %1$s',
+                'NEW_COMMENT_EMAIL_BODY' => '<p>Новый комментарий был сделан на %1$s by %3$s (%4$s).</p><p>Страница: %2$s</p><p>Текст: %5$s</p>',
+                'EMAIL_FOOTER' => '',
+                'NAME' => 'Имя:',
+                'EMAIL' => 'Email:',
+                'WRITTEN_ON' => 'Написан в',
+                'BY' => 'от'
+            ],
             'INFLECTOR_IRREGULAR' => [
                 'person' => 'люди',
                 'man' => 'человек',
@@ -8635,6 +8711,6 @@ Path: `%2$s`
                 6 => 'Duminică'
             ]
         ],
-        'checksum' => '274a15e42ed720834c0c38a7eb010982'
+        'checksum' => 'cb2d8ca9f9f6fa98bdc8f67cb9d3d777'
     ]
 ];
