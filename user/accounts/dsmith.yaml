@@ -1,0 +1,11 @@
+email: devo8604@gmail.com
+fullname: 'Devon Smith'
+title: WebMaster
+state: enabled
+access:
+  admin:
+    login: true
+    super: true
+  site:
+    login: true
+hashed_password: $2y$10$d5GGeLerPcP5sBoDKooCMuh3CFGLPBU/u5t9OzFuOVHjFy9Zd5nJ6
