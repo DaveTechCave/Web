@@ -81,7 +81,7 @@ b, strong, label, th {
   box-shadow: 0 0.05rem 1rem rgba(0, 0, 0, 0.15); }
   #header.scrolled {
     height: 3rem;
-    background-color: rgba(255, 255, 255, 0.9) !important;
+    background-color: rgba(255, 255, 255, 0.9);
     box-shadow: 0 0.05rem 1rem rgba(0, 0, 0, 0.15) !important; }
     #header.scrolled #logo h3 {
       color: #444 !important;
@@ -880,5 +880,17 @@ ul.pagination {
 
 .modular .modular-row:last-child {
   margin-bottom: 2rem; }
+
+#header.scrolled {
+  background-color: rgba(0, 81, 122, 0.9); }
+  #header.scrolled #logo h3 {
+    color: #FFFFFF !important; }
+  #header.scrolled #logo a,
+  #header.scrolled #navbar span {
+    color: #FFFFFF !important; }
+  #header.scrolled #navbar a {
+    color: #FFFFFF !important; }
+    #header.scrolled #navbar a:hover {
+      color: #cccccc !important; }
 
 /*# sourceMappingURL=template.css.map */

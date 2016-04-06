@@ -1,5 +1,4 @@
 // Your custom SCSS should be written here...
-
 .grav-lightslider {
     .lSSlideOuter {
         .lSPager.lSpg {
@@ -9,7 +8,6 @@
         }
     }
 }
-
 #body > script:first-child + .grav-lightslider {
-  margin-top: -3rem;
+    margin-top: -3rem;
 }

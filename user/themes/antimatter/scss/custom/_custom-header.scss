@@ -1,0 +1,18 @@
+
+// OVerride from _header.scss lines 13 - 35
+#header.scrolled {
+    background-color: rgba(-35,81,122,0.90);
+    #logo h3 {
+        color: #FFFFFF !important;
+    }
+    #logo a,
+    #navbar span {
+        color: #FFFFFF !important;
+    }
+    #navbar a {
+        color: #FFFFFF !important;
+        &:hover {
+            color: darken(#FFFFFF, 20%) !important;
+        }
+    }
+}
