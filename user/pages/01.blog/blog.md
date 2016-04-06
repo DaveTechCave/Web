@@ -1,26 +1,22 @@
 ---
 title: Home
-blog_url: blog
-body_classes: header-image fullwidth
-
-sitemap:
-    changefreq: monthly
-    priority: 1.03
-
+body_classes: 'header-image fullwidth'
 content:
-    items: @self.children
-    order:
-        by: date
-        dir: desc
+    items: '@self.children'
     limit: 5
     pagination: true
-
+    url_taxonomy_filters: true
+    order:
+        dir: desc
+        by: date
+sitemap:
+    changefreq: monthly
+blog_url: blog
 feed:
-    description: Sample Blog Description
+    description: 'Sample Blog Description'
     limit: 10
-
 pagination: true
 ---
 
-# My Gravtastic Blog
-## A tale of **awesomazing** adventures
+# The Tech Cave
+## A Place for Tech Enthusiests 

@@ -1,8 +1,8 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledConfig',
-    'timestamp' => 1459910687,
-    'checksum' => '110735027e6ec8f358243fbe626e7024',
+    'timestamp' => 1459912197,
+    'checksum' => 'eec851893de1e9660a32a35381286f28',
     'files' => [
         'user/config' => [
             'media' => [
@@ -15,7 +15,7 @@ return [
             ],
             'site' => [
                 'file' => 'user/config/site.yaml',
-                'modified' => 1456438750
+                'modified' => 1459911030
             ],
             'streams' => [
                 'file' => 'user/config/streams.yaml',
@@ -23,7 +23,11 @@ return [
             ],
             'system' => [
                 'file' => 'user/config/system.yaml',
-                'modified' => 1459910675
+                'modified' => 1459912197
+            ],
+            'themes/antimatter' => [
+                'file' => 'user/config/themes/antimatter.yaml',
+                'modified' => 1459911116
             ]
         ],
         'system/config' => [
@@ -622,15 +626,16 @@ return [
             ]
         ],
         'site' => [
-            'title' => 'Grav',
+            'title' => 'The Tech Cave',
             'author' => [
-                'name' => 'Joe Bloggs',
+                'name' => 'Tech Cave Team',
                 'email' => 'joe@test.com'
             ],
             'taxonomies' => [
                 0 => 'category',
                 1 => 'tag',
-                2 => 'month'
+                2 => 'month',
+                3 => 'Author'
             ],
             'metadata' => [
                 'description' => 'Grav is an easy to use, yet powerful, open source flat-file CMS'
@@ -677,7 +682,7 @@ return [
         ],
         'system' => [
             'absolute_urls' => false,
-            'timezone' => '',
+            'timezone' => 'America/Denver',
             'default_locale' => NULL,
             'param_sep' => ':',
             'wrapped_site' => false,
@@ -747,7 +752,7 @@ return [
                 'etag' => false,
                 'vary_accept_encoding' => false,
                 'redirect_default_route' => false,
-                'redirect_default_code' => 301,
+                'redirect_default_code' => '301',
                 'redirect_trailing_slash' => true,
                 'ignore_files' => [
                     0 => '.DS_Store'
@@ -827,6 +832,25 @@ return [
         ],
         'security' => [
             'salt' => 'Tadwg8fOr7hB03'
+        ],
+        'themes' => [
+            'antimatter' => [
+                'enabled' => true,
+                'default_lang' => 'en',
+                'dropdown' => [
+                    'enabled' => true
+                ],
+                'streams' => [
+                    'schemes' => [
+                        'theme' => [
+                            'type' => 'ReadOnlyStream',
+                            'paths' => [
+                                0 => 'user/themes/antimatter'
+                            ]
+                        ]
+                    ]
+                ]
+            ]
         ]
     ]
 ];
