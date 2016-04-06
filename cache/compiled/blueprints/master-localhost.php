@@ -1,8 +1,8 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledBlueprints',
-    'timestamp' => 1459891575,
-    'checksum' => '06aed0064d3abca349aa8a25dded1e96',
+    'timestamp' => 1459910685,
+    'checksum' => 'dceea8594ae88f45ae68d8b4a7a7d5cc',
     'files' => [
         'system/blueprints/config' => [
             'media' => [
@@ -45,11 +45,11 @@ return [
             ],
             'plugins/admin' => [
                 'file' => 'user/plugins/admin/blueprints.yaml',
-                'modified' => 1459825541
+                'modified' => 1459910674
             ],
             'plugins/login' => [
                 'file' => 'user/plugins/login/blueprints.yaml',
-                'modified' => 1459825539
+                'modified' => 1459910672
             ],
             'plugins/random' => [
                 'file' => 'user/plugins/random/blueprints.yaml',
@@ -69,15 +69,11 @@ return [
             ],
             'plugins/form' => [
                 'file' => 'user/plugins/form/blueprints.yaml',
-                'modified' => 1459891565
+                'modified' => 1459910669
             ],
             'plugins/breadcrumbs' => [
                 'file' => 'user/plugins/breadcrumbs/blueprints.yaml',
                 'modified' => 1456438752
-            ],
-            'plugins/comments' => [
-                'file' => 'user/plugins/comments/blueprints.yaml',
-                'modified' => 1459891568
             ],
             'plugins/error' => [
                 'file' => 'user/plugins/error/blueprints.yaml',
@@ -85,7 +81,7 @@ return [
             ],
             'plugins/email' => [
                 'file' => 'user/plugins/email/blueprints.yaml',
-                'modified' => 1459891566
+                'modified' => 1459910670
             ]
         ]
     ],
@@ -1617,24 +1613,6 @@ return [
                     'type' => 'bool'
                 ],
                 'name' => 'plugins.breadcrumbs.link_trailing'
-            ],
-            'plugins.comments' => [
-                'type' => '_parent',
-                'name' => 'plugins.comments'
-            ],
-            'plugins.comments.enabled' => [
-                'type' => 'toggle',
-                'label' => 'PLUGIN_ADMIN.PLUGIN_STATUS',
-                'highlight' => 1,
-                'default' => 0,
-                'options' => [
-                    1 => 'PLUGIN_ADMIN.ENABLED',
-                    0 => 'PLUGIN_ADMIN.DISABLED'
-                ],
-                'validate' => [
-                    'type' => 'bool'
-                ],
-                'name' => 'plugins.comments.enabled'
             ],
             'plugins.error' => [
                 'type' => '_parent',
@@ -3251,9 +3229,6 @@ return [
                     'icon_home' => 'plugins.breadcrumbs.icon_home',
                     'icon_divider_classes' => 'plugins.breadcrumbs.icon_divider_classes',
                     'link_trailing' => 'plugins.breadcrumbs.link_trailing'
-                ],
-                'comments' => [
-                    'enabled' => 'plugins.comments.enabled'
                 ],
                 'error' => [
                     'enabled' => 'plugins.error.enabled',

@@ -1,37 +1,29 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledConfig',
-    'timestamp' => 1459891575,
-    'checksum' => '59d875874ad4d031b5c16ce7a2cb273a',
+    'timestamp' => 1459910687,
+    'checksum' => '110735027e6ec8f358243fbe626e7024',
     'files' => [
         'user/config' => [
             'media' => [
                 'file' => 'user/config/media.yaml',
-                'modified' => 1459825553
-            ],
-            'plugins/taxonomylist' => [
-                'file' => 'user/config/plugins/taxonomylist.yaml',
-                'modified' => 1459877054
+                'modified' => 1459910685
             ],
             'security' => [
                 'file' => 'user/config/security.yaml',
-                'modified' => 1459824940
+                'modified' => 1459910434
             ],
             'site' => [
                 'file' => 'user/config/site.yaml',
-                'modified' => 1459876227
+                'modified' => 1456438750
             ],
             'streams' => [
                 'file' => 'user/config/streams.yaml',
-                'modified' => 1459825553
+                'modified' => 1459910685
             ],
             'system' => [
                 'file' => 'user/config/system.yaml',
-                'modified' => 1459891543
-            ],
-            'themes/bones' => [
-                'file' => 'user/config/themes/bones.yaml',
-                'modified' => 1459865518
+                'modified' => 1459910675
             ]
         ],
         'system/config' => [
@@ -75,11 +67,11 @@ return [
             ],
             'plugins/admin' => [
                 'file' => 'user/plugins/admin/admin.yaml',
-                'modified' => 1459825541
+                'modified' => 1459910674
             ],
             'plugins/login' => [
                 'file' => 'user/plugins/login/login.yaml',
-                'modified' => 1459825539
+                'modified' => 1459910672
             ],
             'plugins/random' => [
                 'file' => 'user/plugins/random/random.yaml',
@@ -99,15 +91,11 @@ return [
             ],
             'plugins/form' => [
                 'file' => 'user/plugins/form/form.yaml',
-                'modified' => 1459891565
+                'modified' => 1459910669
             ],
             'plugins/breadcrumbs' => [
                 'file' => 'user/plugins/breadcrumbs/breadcrumbs.yaml',
                 'modified' => 1456438752
-            ],
-            'plugins/comments' => [
-                'file' => 'user/plugins/comments/comments.yaml',
-                'modified' => 1459891568
             ],
             'plugins/error' => [
                 'file' => 'user/plugins/error/error.yaml',
@@ -115,7 +103,7 @@ return [
             ],
             'plugins/email' => [
                 'file' => 'user/plugins/email/email.yaml',
-                'modified' => 1459891566
+                'modified' => 1459910670
             ]
         ]
     ],
@@ -362,91 +350,6 @@ return [
                 'icon_home' => '',
                 'icon_divider_classes' => 'fa fa-angle-right',
                 'link_trailing' => false
-            ],
-            'comments' => [
-                'enabled' => true,
-                'enable_on_routes' => [
-                    0 => '/blog'
-                ],
-                'disable_on_routes' => [
-                    0 => '/blog/blog-post-to-ignore',
-                    1 => '/ignore-this-route'
-                ],
-                'form' => [
-                    'name' => 'comments',
-                    'fields' => [
-                        0 => [
-                            'name' => 'name',
-                            'label' => 'Name',
-                            'placeholder' => 'Enter your name',
-                            'autocomplete' => 'on',
-                            'type' => 'text',
-                            'validate' => [
-                                'required' => true
-                            ]
-                        ],
-                        1 => [
-                            'name' => 'email',
-                            'label' => 'Email',
-                            'placeholder' => 'Enter your email address',
-                            'type' => 'email',
-                            'validate' => [
-                                'required' => true
-                            ]
-                        ],
-                        2 => [
-                            'name' => 'text',
-                            'label' => 'Message',
-                            'placeholder' => 'Enter your message',
-                            'type' => 'textarea',
-                            'validate' => [
-                                'required' => true
-                            ]
-                        ],
-                        3 => [
-                            'name' => 'date',
-                            'type' => 'hidden',
-                            'process' => [
-                                'fillWithCurrentDateTime' => true
-                            ]
-                        ],
-                        4 => [
-                            'name' => 'title',
-                            'type' => 'hidden',
-                            'evaluateDefault' => 'grav.page.header.title'
-                        ],
-                        5 => [
-                            'name' => 'lang',
-                            'type' => 'hidden',
-                            'evaluateDefault' => 'grav.language.getLanguage'
-                        ],
-                        6 => [
-                            'name' => 'path',
-                            'type' => 'hidden',
-                            'evaluateDefault' => 'grav.uri.path'
-                        ]
-                    ],
-                    'buttons' => [
-                        0 => [
-                            'type' => 'submit',
-                            'value' => 'Submit'
-                        ]
-                    ],
-                    'process' => [
-                        0 => [
-                            'email' => [
-                                'subject' => '[New Comment] from {{ form.value.name|e }}',
-                                'body' => '{% include \'forms/data.html.twig\' %}'
-                            ]
-                        ],
-                        1 => [
-                            'addComment' => NULL
-                        ],
-                        2 => [
-                            'message' => 'Thank you for writing your comment!'
-                        ]
-                    ]
-                ]
             ],
             'error' => [
                 'enabled' => true,
@@ -719,24 +622,18 @@ return [
             ]
         ],
         'site' => [
-            'title' => 'The Tech Cave',
+            'title' => 'Grav',
             'author' => [
-                'name' => 'Tech Cave Team',
-                'email' => 'john@email.com',
-                'devon' => [
-                    'name' => 'Devon Smith',
-                    'email' => 'devo8604@gmail.com',
-                    'bio' => 'I am a professional Linux System Administrator and a web development hobbyist'
-                ]
+                'name' => 'Joe Bloggs',
+                'email' => 'joe@test.com'
             ],
             'taxonomies' => [
                 0 => 'category',
                 1 => 'tag',
-                2 => 'month',
-                3 => 'author'
+                2 => 'month'
             ],
             'metadata' => [
-                'description' => 'A Blog sit for the nerd enthusiest'
+                'description' => 'Grav is an easy to use, yet powerful, open source flat-file CMS'
             ],
             'summary' => [
                 'enabled' => true,
@@ -780,7 +677,7 @@ return [
         ],
         'system' => [
             'absolute_urls' => false,
-            'timezone' => 'America/Denver',
+            'timezone' => '',
             'default_locale' => NULL,
             'param_sep' => ':',
             'wrapped_site' => false,
@@ -798,11 +695,11 @@ return [
                 'override_locale' => false
             ],
             'home' => [
-                'alias' => '/landing',
+                'alias' => '/blog',
                 'hide_in_urls' => false
             ],
             'pages' => [
-                'theme' => 'bones',
+                'theme' => 'antimatter',
                 'order' => [
                     'by' => 'default',
                     'dir' => 'asc'
@@ -850,7 +747,7 @@ return [
                 'etag' => false,
                 'vary_accept_encoding' => false,
                 'redirect_default_route' => false,
-                'redirect_default_code' => '301',
+                'redirect_default_code' => 301,
                 'redirect_trailing_slash' => true,
                 'ignore_files' => [
                     0 => '.DS_Store'
@@ -929,237 +826,7 @@ return [
             ]
         ],
         'security' => [
-            'salt' => 'U5WMjJBswd4S1y'
-        ],
-        'themes' => [
-            'bones' => [
-                'enabled' => true,
-                'site_title' => [
-                    'enabled' => true
-                ],
-                'google_fonts_logo' => [
-                    'enabled' => true
-                ],
-                'fontawesome' => [
-                    'enabled' => true
-                ],
-                'google_prettify' => [
-                    'enabled' => true
-                ],
-                'dropdown' => [
-                    'enabled' => false
-                ],
-                'mobilemenu_breakpoint' => 'large',
-                'mobilemenu_position' => 'left',
-                'foundation_offcanvas_js' => [
-                    'enabled' => true
-                ],
-                'foundation_util_mediaQuery_js' => [
-                    'enabled' => true
-                ],
-                'foundation_util_motion_js' => [
-                    'enabled' => true
-                ],
-                'foundation_util_touch_js' => [
-                    'enabled' => true
-                ],
-                'foundation_util_triggers_js' => [
-                    'enabled' => true
-                ],
-                'css_bones' => [
-                    'enabled' => true
-                ],
-                'css_global_styles' => [
-                    'enabled' => true
-                ],
-                'css_grid' => [
-                    'enabled' => true
-                ],
-                'css_flex_grid' => [
-                    'enabled' => false
-                ],
-                'css_typography' => [
-                    'enabled' => true
-                ],
-                'css_button' => [
-                    'enabled' => true
-                ],
-                'css_forms' => [
-                    'enabled' => true
-                ],
-                'css_visibility_classes' => [
-                    'enabled' => true
-                ],
-                'css_float_classes' => [
-                    'enabled' => true
-                ],
-                'css_menu' => [
-                    'enabled' => true
-                ],
-                'css_off_canvas' => [
-                    'enabled' => true
-                ],
-                'css_pagination' => [
-                    'enabled' => true
-                ],
-                'css_sticky' => [
-                    'enabled' => true
-                ],
-                'css_table' => [
-                    'enabled' => true
-                ],
-                'tab' => 'on',
-                'animate_css' => [
-                    'enabled' => true
-                ],
-                'wow_js' => [
-                    'enabled' => true
-                ],
-                'foundation_abide_js' => [
-                    'enabled' => false
-                ],
-                'foundation_accordion_js' => [
-                    'enabled' => false
-                ],
-                'foundation_accordionMenu_js' => [
-                    'enabled' => false
-                ],
-                'foundation_drilldown_js' => [
-                    'enabled' => false
-                ],
-                'foundation_dropdown_js' => [
-                    'enabled' => false
-                ],
-                'foundation_dropdownMenu_js' => [
-                    'enabled' => false
-                ],
-                'foundation_equalizer_js' => [
-                    'enabled' => true
-                ],
-                'foundation_interchange_js' => [
-                    'enabled' => false
-                ],
-                'foundation_magellan_js' => [
-                    'enabled' => false
-                ],
-                'foundation_orbit_js' => [
-                    'enabled' => false
-                ],
-                'foundation_responsiveMenu_js' => [
-                    'enabled' => false
-                ],
-                'foundation_responsiveToggle_js' => [
-                    'enabled' => false
-                ],
-                'foundation_reveal_js' => [
-                    'enabled' => false
-                ],
-                'foundation_slider_js' => [
-                    'enabled' => false
-                ],
-                'foundation_sticky_js' => [
-                    'enabled' => false
-                ],
-                'foundation_tabs_js' => [
-                    'enabled' => false
-                ],
-                'foundation_toggler_js' => [
-                    'enabled' => false
-                ],
-                'foundation_tooltip_js' => [
-                    'enabled' => false
-                ],
-                'foundation_util_box_js' => [
-                    'enabled' => false
-                ],
-                'foundation_util_keyboard_js' => [
-                    'enabled' => false
-                ],
-                'foundation_util_nest_js' => [
-                    'enabled' => false
-                ],
-                'foundation_util_timerAndImageLoader_js' => [
-                    'enabled' => false
-                ],
-                'css_custom' => [
-                    'enabled' => false
-                ],
-                'css_accordion' => [
-                    'enabled' => false
-                ],
-                'css_accordion_menu' => [
-                    'enabled' => false
-                ],
-                'css_badge' => [
-                    'enabled' => false
-                ],
-                'css_breadcrumbs' => [
-                    'enabled' => false
-                ],
-                'css_button_group' => [
-                    'enabled' => false
-                ],
-                'css_callout' => [
-                    'enabled' => true
-                ],
-                'css_close_button' => [
-                    'enabled' => false
-                ],
-                'css_drilldown_menu' => [
-                    'enabled' => false
-                ],
-                'css_dropdown' => [
-                    'enabled' => false
-                ],
-                'css_dropdown_menu' => [
-                    'enabled' => false
-                ],
-                'css_flex_video' => [
-                    'enabled' => false
-                ],
-                'css_label' => [
-                    'enabled' => false
-                ],
-                'css_media_object' => [
-                    'enabled' => false
-                ],
-                'css_orbit' => [
-                    'enabled' => false
-                ],
-                'css_progress_bar' => [
-                    'enabled' => false
-                ],
-                'css_slider' => [
-                    'enabled' => false
-                ],
-                'css_reveal' => [
-                    'enabled' => false
-                ],
-                'css_switch' => [
-                    'enabled' => false
-                ],
-                'css_tabs' => [
-                    'enabled' => false
-                ],
-                'css_thumbnail' => [
-                    'enabled' => false
-                ],
-                'css_title_bar' => [
-                    'enabled' => false
-                ],
-                'css_tooltip' => [
-                    'enabled' => false
-                ],
-                'css_top_bar' => [
-                    'enabled' => false
-                ],
-                'css_ui_transitions' => [
-                    'enabled' => false
-                ],
-                'css_ui_animations' => [
-                    'enabled' => false
-                ]
-            ]
+            'salt' => 'Tadwg8fOr7hB03'
         ]
     ]
 ];

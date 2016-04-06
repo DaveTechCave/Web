@@ -2,32 +2,23 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/var/www/html/user/config/site.yaml',
-    'modified' => 1459876227,
+    'modified' => 1456438750,
     'data' => [
-        'title' => 'The Tech Cave',
+        'title' => 'Grav',
         'author' => [
-            'name' => 'Tech Cave Team',
-            'email' => 'john@email.com',
-            'devon' => [
-                'name' => 'Devon Smith',
-                'email' => 'devo8604@gmail.com',
-                'bio' => 'I am a professional Linux System Administrator and a web development hobbyist'
-            ]
+            'name' => 'Joe Bloggs',
+            'email' => 'joe@test.com'
+        ],
+        'blog' => [
+            'route' => ''
+        ],
+        'metadata' => [
+            'description' => 'Grav is an easy to use, yet powerful, open source flat-file CMS'
         ],
         'taxonomies' => [
             0 => 'category',
             1 => 'tag',
-            2 => 'month',
-            3 => 'author'
-        ],
-        'metadata' => [
-            'description' => 'A Blog sit for the nerd enthusiest'
-        ],
-        'summary' => [
-            'enabled' => true,
-            'format' => 'short',
-            'size' => 300,
-            'delimiter' => '==='
+            2 => 'month'
         ],
         'redirects' => [
             '/changelog' => '/blog/the-urban-jungle'
@@ -35,9 +26,6 @@ return [
         'routes' => [
             '/something/else' => '/blog/focus-and-blur',
             '/another/one/(.*)' => '/blog/$1'
-        ],
-        'blog' => [
-            'route' => ''
         ]
     ]
 ];
