@@ -1,7 +1,6 @@
-
 // OVerride from _header.scss lines 13 - 35
 #header.scrolled {
-    background-color: rgba(-35,81,122,0.90);
+    background-color: rgba(59, 79, 97,0.90) !important;
     #logo h3 {
         color: #FFFFFF !important;
     }
@@ -15,4 +14,21 @@
             color: darken(#FFFFFF, 20%) !important;
         }
     }
+}
+// Override from _blog.css lines 137 - 143
+div#breadcrumbs {
+    background-color: #B8A97B;
+}
+.content-wrapper {
+    background-color: #25384A;
+    color: #ffffff;
+    a {
+        color: #B88E7B !important;
+        &:hover {
+            color: #E2C0B1 !important;
+        }
+    }
+}
+#breadcrumbs {
+    margin-top: 0rem !important;
 }

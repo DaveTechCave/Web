@@ -674,7 +674,8 @@ td {
   margin-bottom: 1rem; }
 
 div#breadcrumbs {
-  padding-left: 0; }
+  padding-left: 0;
+  background-color: #B8A97B; }
   @media only all and (max-width: 47.938em) {
     div#breadcrumbs {
       display: none; } }
@@ -882,7 +883,7 @@ ul.pagination {
   margin-bottom: 2rem; }
 
 #header.scrolled {
-  background-color: rgba(0, 81, 122, 0.9); }
+  background-color: rgba(59, 79, 97, 0.9) !important; }
   #header.scrolled #logo h3 {
     color: #FFFFFF !important; }
   #header.scrolled #logo a,
@@ -892,5 +893,19 @@ ul.pagination {
     color: #FFFFFF !important; }
     #header.scrolled #navbar a:hover {
       color: #cccccc !important; }
+
+div#breadcrumbs {
+  background-color: #B8A97B; }
+
+.content-wrapper {
+  background-color: #25384A;
+  color: #ffffff; }
+  .content-wrapper a {
+    color: #B88E7B !important; }
+    .content-wrapper a:hover {
+      color: #E2C0B1 !important; }
+
+#breadcrumbs {
+  margin-top: 0rem !important; }
 
 /*# sourceMappingURL=template.css.map */

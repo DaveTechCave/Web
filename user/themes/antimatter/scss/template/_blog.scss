@@ -136,6 +136,7 @@
 // Breadcrumbs
 div#breadcrumbs {
     padding-left: 0;
+    background-color: #B8A97B;
     @include breakpoint(mobile-only) {
         display: none;
     }
