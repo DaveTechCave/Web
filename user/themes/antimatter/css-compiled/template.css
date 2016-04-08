@@ -883,16 +883,18 @@ ul.pagination {
   margin-bottom: 2rem; }
 
 #header.scrolled {
-  background-color: rgba(59, 79, 97, 0.9) !important; }
+  background-color: rgba(184, 169, 123, 0.9) !important; }
   #header.scrolled #logo h3 {
-    color: #FFFFFF !important; }
+    color: #25384A !important; }
   #header.scrolled #logo a,
   #header.scrolled #navbar span {
-    color: #FFFFFF !important; }
+    color: #25384A !important; }
   #header.scrolled #navbar a {
-    color: #FFFFFF !important; }
+    color: #25384A !important; }
     #header.scrolled #navbar a:hover {
       color: #cccccc !important; }
+  #header.scrolled #navbar a:before, #header.scrolled #navbar a:after {
+    background-color: #25384A !important; }
 
 div#breadcrumbs {
   background-color: #B8A97B; }

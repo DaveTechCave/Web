@@ -1,18 +1,21 @@
 // OVerride from _header.scss lines 13 - 35
 #header.scrolled {
-    background-color: rgba(59, 79, 97,0.90) !important;
+    background-color: rgba(184, 169, 123, 0.9) !important;
     #logo h3 {
-        color: #FFFFFF !important;
+        color: #25384A !important;
     }
     #logo a,
     #navbar span {
-        color: #FFFFFF !important;
+        color: #25384A !important;
     }
     #navbar a {
-        color: #FFFFFF !important;
+        color: #25384A !important;
         &:hover {
             color: darken(#FFFFFF, 20%) !important;
         }
+    }
+    #navbar a:before, #navbar a:after {
+        background-color: #25384A !important;
     }
 }
 // Override from _blog.css lines 137 - 143
